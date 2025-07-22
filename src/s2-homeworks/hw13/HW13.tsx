@@ -37,8 +37,8 @@ const HW13 = () => {
                 setCode('Код 200!')
                 setImage(success200)
                 // дописать
-                setInfo(res.data.errorText)
-                setText(res.data.info)
+                setInfo(res.data.info)
+                setText(res.data.errorText)
             })
             .catch((e) => {
                 // дописать
@@ -46,13 +46,13 @@ const HW13 = () => {
                 if (response.status === 500) {
                     setCode('Ошибка 500!')
                     setImage(error500)
-                    setInfo(response.data.errorText)
-                    setText(response.data.info)
+                    setInfo(response.data.info)
+                    setText(response.data.errorText)
                 } else if (response.status === 400) {
                     setCode('Ошибка 400!')
                     setImage(error400)
-                    setInfo(response.data.errorText)
-                    setText(response.data.info)
+                    setInfo(response.data.info)
+                    setText(response.data.errorText)
                 } else {
                     setCode('Error!')
                     setImage(errorUnknown)
@@ -115,11 +115,11 @@ const HW13 = () => {
                         <div id={'hw13-code'} className={s.code}>
                             {code}
                         </div>
-                        <div id={'hw13-info'} className={s.info}>
-                            {info}
-                        </div>
                         <div id={'hw13-text'} className={s.text}>
                             {text}
+                        </div>
+                        <div id={'hw13-info'} className={s.info}>
+                            {info}
                         </div>
                     </div>
                 </div>
