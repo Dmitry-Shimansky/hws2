@@ -1,22 +1,41 @@
 .buttonsContainer {
+    display: flex;
+    gap: 25px;
+    margin-bottom: 20px;
 }
 
 .responseContainer {
+    display: flex;
+    gap: 25px;
+    justify-content: center;
 }
 
 .imageContainer {
+    height: 100%;
 }
 
 .image {
+    object-fit: cover;
 }
 
 .textContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: "Typography", sans-serif;
+    font-weight: 500;
+    font-size: 30px;
+    color: #000;
 }
 
 .code {
+    font-size: 30px;
 }
 
 .text {
+    font-size: 16px;
 }
+
 .info {
+    font-size: 16px;
 }
