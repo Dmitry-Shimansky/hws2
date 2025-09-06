@@ -53,7 +53,6 @@ const HW14 = () => {
     }
 
     useEffect(() => {
-        debugger
         const params = Object.fromEntries(searchParams)
         sendQuery(params.find || '')
         setFind(params.find || '')
